@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --font-size-16: 16px;
+    --font-size-20: 20px;
+    --font-size-18: 18px;
+    --font-size-22: 22px;
+    --font-size-23: 23px;
+    --font-size-24: 24px;
+    --font-size-25: 25px;
+    --font-size-28: 28px;
+    --font-size-30: 30px;
+    --font-size-31: 31px;
+    --font-size-35: 35px;
+    --font-size-36: 36px;
+    --font-size-39: 39px;
+    --font-size-40: 40px;
+    --font-size-42: 42px;
+    --font-size-48: 48px;
+    --font-size-50: 50px;
+    --font-size-61: 61px;
+    --font-size-64: 64px;
+    --font-size-67: 67px;
+    --font-size-70: 70px;
+    --font-size-90: 90px;
+
+
+    --color-white: white;
+    --color-black: black;
+
+    --font-weight-xsm: 300;
+    --font-weight-sm: 400;
+    --font-weight-md: 500;
+    --font-weight-lg: 600;
+    --font-weight-xl: 700;
+    --font-weight-xxl: 800;
+    --font-weight-xxxl: 900;
+
+    --ff-work: "Work Sans", sans-serif;
+}
+
+.bg_image_hero {
+    background-image: url(../images/section_bg_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-2 bg_layer {
+    background-image: url(../image/hero-layer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.logo_font {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.95px;
+    letter-spacing: -0.759261965751648px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.nav_links {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.77px;
+    text-align: center;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.gap_45 {
+    gap: 45px;
+}
+
+.hero_font {
+    font-family: Work Sans;
+    font-size: 61px;
+    font-weight: 800;
+    line-height: 71.76px;
+    letter-spacing: -1.2744754552841187px;
+    text-align: center;
+    max-width: 730px;
+}
+
+.submit_btn {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.46px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 38px;
+    color: var(--color-white);
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+}
+
+.submit_btn:hover {
+    background: linear-gradient(185deg, #FD9B2B 13.58%, #F14F09 86.99%);
+}
+
+.mt_30 {
+    margin-top: 30px;
+}
