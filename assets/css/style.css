@@ -202,6 +202,16 @@
     margin-bottom: 30px;
 }
 
+.curve_img {
+    top: 70%;
+    left: -5%;
+}
+
+.sun {
+    top: 35%;
+    right: 10%;
+}
+
 @media (max-width:992px) {
     .navitems {
         width: 100%;
