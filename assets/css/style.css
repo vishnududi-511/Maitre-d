@@ -55,17 +55,17 @@
     background-size: cover;
 }
 
-.section-2 bg_layer {
-    background-image: url(../image/hero-layer.png);
+.bg_layer {
+    background-image: url(../images/hero-layer.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
 }
 
 .logo_font {
-    font-family: Work Sans;
-    font-size: 24px;
-    font-weight: 400;
+    font-family: var(--ff-work);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-sm);
     line-height: 27.95px;
     letter-spacing: -0.759261965751648px;
     text-align: center;
@@ -73,9 +73,9 @@
 }
 
 .nav_links {
-    font-family: Work Sans;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: var(--ff-work);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-sm);
     line-height: 18.77px;
     text-align: center;
     color: var(--color-black);
@@ -86,20 +86,24 @@
     gap: 45px;
 }
 
+.mb_80 {
+    margin-bottom: 80px;
+}
+
 .hero_font {
-    font-family: Work Sans;
-    font-size: 61px;
-    font-weight: 800;
-    line-height: 71.76px;
+    font-family: var(--ff-work);
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-xxl);
+    line-height: 49.76px;
     letter-spacing: -1.2744754552841187px;
     text-align: center;
     max-width: 730px;
 }
 
 .submit_btn {
-    font-family: Work Sans;
-    font-size: 20px;
-    font-weight: 700;
+    font-family: var(--ff-work);
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-xl);
     line-height: 23.46px;
     text-align: center;
     border: none;
@@ -212,6 +216,73 @@
     right: 10%;
 }
 
+.layer {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.pt_110 {
+    padding-top: 110px;
+}
+
+.subheading {
+    font-family: var(--ff-work);
+    font-size: var(--font-weight-sm);
+    font-weight: var(--font-weight-lg);
+    line-height: 18.77px;
+    text-align: left;
+    background: -webkit-linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    max-width: fit-content;
+}
+
+.subheading::after {
+    content: '';
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 110%;
+}
+
+.sec_2img {
+    max-width: 443px;
+}
+
+.sec_heading {
+    font-family: var(--ff-work);
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-xl);
+    line-height: 46.92px;
+    letter-spacing: -1.2744754552841187px;
+    text-align: left;
+}
+
+.heading_gradient {
+    background: -webkit-linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.sec2_para {
+    font-family: var(--ff-work);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-sm);
+    line-height: 26.93px;
+    text-align: left;
+    color: var(--color-black);
+    opacity: 70%;
+}
+
+.pt_15 {
+    padding-top: 15px;
+}
+
 @media (max-width:992px) {
     .navitems {
         width: 100%;
@@ -225,9 +296,52 @@
         flex-direction: column;
         background-color: var(--nav_bg);
         transition: all 300ms linear;
+        z-index: 5;
     }
 
     .show {
         left: 0;
     }
+
+    .menuicon {
+        z-index: 6;
+    }
+}
+
+@media (min-width:992px) {
+    .lg_pt_110 {
+        padding-top: 110px !important;
+    }
+}
+
+@media (min-width:768px) {
+    .sec2_para {
+        max-width: 453px;
+    }
+}
+
+@media (min-width:576px) {
+    .hero_font {
+        font-family: var(--ff-work);
+        font-size: var(--font-size-61);
+        font-weight: var(--font-weight-xxl);
+        line-height: 71.76px;
+        letter-spacing: -1.2744754552841187px;
+        text-align: center;
+        max-width: 730px;
+    }
+
+    .sm_pt_70 {
+        padding-top: 70px;
+    }
+
+    .sec_heading {
+        font-family: var(--ff-work);
+        font-size: var(--font-size-40);
+        font-weight: var(--font-weight-xl);
+        line-height: 46.92px;
+        letter-spacing: -1.2744754552841187px;
+        text-align: left;
+    }
+
 }
