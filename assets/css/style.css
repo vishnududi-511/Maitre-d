@@ -463,6 +463,126 @@
     display: flex;
 }
 
+/* --------------------section5----------------------------------- */
+.price_box {
+    box-shadow: 0px 6px 12px 0px #0000000F;
+}
+
+.feature_price_box {
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    padding: 24px 40px;
+}
+
+.toggle-box {
+    width: 77.16px;
+    height: 34.72px;
+    gap: 0px;
+    border-radius: 19.29px;
+    padding: 3.86px;
+    opacity: 0px;
+    background-color: var(--color-white);
+    position: relative;
+    box-shadow: 0px 2.31px 3.09px 1.16px #0000001A inset;
+}
+
+.toggle-ball {
+    height: 27.1px;
+    width: 27.1px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    transition: all 200ms linear;
+    cursor: pointer;
+    box-shadow: -0.77px 0.39px 2.31px 0px #00000040;
+}
+
+.toggle-ball-right {
+    left: 46px;
+    transition: all 200ms linear;
+}
+
+.price_switch_font {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30.76px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.feature_box {
+    padding: 42px;
+}
+
+.mb_25 {
+    margin-bottom: 25px;
+}
+
+.tik_checkbox {
+    display: none;
+}
+
+.cross_checkbox {
+    display: flex;
+}
+
+.tik {
+    display: flex;
+}
+
+.cross {
+    display: none;
+}
+
+.platinum_box {
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    padding: 40px 21px;
+    border-radius: 10px;
+}
+
+.sup_month {
+    top: -2rem;
+}
+
+.diamond_circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.dollar_money {
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56.3px;
+    letter-spacing: -1.0659198760986328px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.sup_month {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.42px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.platinum_font {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.46px;
+    text-align: center;
+    color: var(--color-white);
+}
+
 @media (max-width:992px) {
     .navitems {
         width: 100%;
