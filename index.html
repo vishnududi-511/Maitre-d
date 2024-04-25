@@ -29,11 +29,11 @@
                         <p class="logo_font m-0">maître d</p>
                     </div>
                     <div class="d-flex align-items-center gap_45 navitems">
-                        <a href="" class="nav_links">Home</a>
-                        <a href="" class="nav_links">Modules</a>
-                        <a href="" class="nav_links">Pricing</a>
-                        <a href="" class="nav_links">Features</a>
-                        <a href="" class="nav_links">Contact us</a>
+                        <a href="#home" class="nav_links">Home</a>
+                        <a href="#Modules" class="nav_links">Modules</a>
+                        <a href="#price" class="nav_links">Pricing</a>
+                        <a href="#features" class="nav_links">Features</a>
+                        <a href="#contactus" class="nav_links">Contact us</a>
                         <img src="./assets/images/svg/searchicon.svg" alt="searchicon">
                     </div>
                     <div class="menuicon d-lg-none d-flex">
@@ -64,7 +64,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="container flex-grow-1 d-flex flex-column justify-content-center align-items-center">
             <div class="position-relative">
@@ -107,8 +106,11 @@
         </div>
     </section>
     <!-- section3 -->
-    <section>
-        <div class="container whychoose_us">
+    <section class="position-relative">
+        <div class="position-absolute contact_us_position_sec3">
+            <img src="./assets/images/svg/contact_us_position.svg" alt="contact_us_position_sec3">
+        </div>
+        <div class="container whychoose_us position-relative z-1" id="features">
             <div class="d-flex align-items-center justify-content-center flex-column">
                 <h5 class="subheading">Features</h5>
                 <h2 class="sec_heading">Why Choose <span class="heading_gradient"> Maître D?</span></h2>
@@ -185,11 +187,12 @@
                 <button class="signup mt-5">Sign Up Today</button>
             </div>
         </div>
+
     </section>
     <!-- section4 -->
     <section class="pt_40">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-center flex-column">
+        <div class="container" id="Modules">
+            <div class="d-flex  align-items-center justify-content-center flex-column">
                 <h5 class="subheading">Modules</h5>
                 <h2 class="sec_heading">Why Choose <span class="heading_gradient"> Maître D?</span></h2>
             </div>
@@ -449,7 +452,7 @@
     </section>
     <!-- section5 -->
     <section class="pt-5">
-        <div class="container">
+        <div class="container" id="price">
             <div class="d-flex align-items-center justify-content-center flex-column">
                 <h5 class="subheading">pricing</h5>
                 <h2 class="sec_heading">Simple pricing for <span class="heading_gradient">everyone</span></h2>
@@ -669,9 +672,9 @@
                                 <div class="diamond_circle d-flex align-items-center justify-content-center">
                                     <img src="./assets/images/svg/diamond.svg" alt="diamond">
                                 </div>
-                                <p class="platinum_font">Platinum</p>
+                                <p class="platinum_font mt-1">Platinum</p>
                             </div>
-                            <div class="text_box">
+                            <div class="text_box mt-lg-0 mt_20">
                                 <p class="dollar_money m-0">$449<sup class="sup_month">/Month</sup></p>
                             </div>
                         </div>
@@ -681,10 +684,13 @@
         </div>
     </section>
     <!-- section6 -->
-    <section>
-        <div class="container">
+    <section class="py_80">
+        <div class="container" id="contactus">
             <div class="row flex-column-reverse flex-lg-row">
-                <div class="col-lg-6 col-12 d-flex flex-column justify-content-center mt-lg-0 mt-3">
+                <div class="col-lg-6 col-12 d-flex flex-column justify-content-center mt-lg-0 mt-3 position-relative">
+                    <div class="position-absolute section_position_svg">
+                        <img src="./assets/images/svg/contact_us_position.svg" alt="contact_us_position">
+                    </div>
                     <h5 class="subheading">Contact US</h5>
                     <h2 class="sec_heading text_align_left">Get in touch!</h2>
                     <form>
@@ -719,10 +725,12 @@
                     business within
                     the beauty industry.</p>
                 <div class="d-flex gap_50">
-                    <a href="" class="footer_links">Navigation</a>
-                    <a href="" class="footer_links">Company</a>
+                    <a href="#" class="footer_links">Navigation</a>
+                    <a href="#" class="footer_links">Company</a>
+                    <a href="mailto:@gamil.com" class="footer_links contact_footer">Contact </a>
                 </div>
             </div>
+        </div>
         </div>
         <div class="bottom_line my-3"></div>
         <div class="container">
