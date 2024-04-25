@@ -43,6 +43,12 @@ $(".slider").slick({
     // instead of a settings object
   ],
 });
+let navitems = document.querySelector(".navitems");
+let menubox = document.querySelector(".menuicon");
+
+menubox.addEventListener("click", function () {
+  navitems.classList.toggle("show");
+});
 
 let toggle_box = document.querySelector(".toggle-ball");
 let pricebox = document.querySelectorAll(".price_box");
@@ -67,18 +73,18 @@ let subscriptionType = document.querySelector(".sup_month");
 let subscriptionamount = document.querySelector(".dollar_money");
 // Add click event listener to the toggle box
 
-  // Add click event listener to the toggle box
-  toggleBall.addEventListener("click", function () {
-    // Check the current subscription type
-    if (subscriptionType.innerHTML === "/Month") {
-      // If it's month, change it to yearly
-      subscriptionType.innerHTML = "/Yearly";
-      // Change the amount of the plan
-      subscriptionamount.innerHTML = "$999";
-    } else {
-      // If it's yearly, change it back to month
-      subscriptionType.innerHTML = "/Month";
-      // Revert the amount of the plan
-      subscriptionamount.innerHTML = "$449";
-    }
-  });
+// Add click event listener to the toggle box
+toggleBall.addEventListener("click", function () {
+  // Check the current subscription type
+  if (subscriptionType.innerHTML === "/Month") {
+    // If it's month, change it to yearly
+    subscriptionType.innerHTML = "/Yearly";
+    // Change the amount of the plan
+    subscriptionamount.innerHTML = "$999";
+  } else {
+    // If it's yearly, change it back to month
+    subscriptionType.innerHTML = "/Month";
+    // Revert the amount of the plan
+    subscriptionamount.innerHTML = "$449";
+  }
+});
