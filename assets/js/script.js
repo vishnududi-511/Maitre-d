@@ -92,6 +92,13 @@ toggleBall.addEventListener("click", function () {
 let contact_btn = document.querySelector(".contact_footer");
 let callbtn = document.querySelector(".footer_new_btn");
 
-contact_btn.addEventListener('click', function () {
-  callbtn.classList.toggle("btn_show")
-})
+contact_btn.addEventListener("click", function () {
+  callbtn.classList.toggle("btn_show");
+});
+
+
+let preloader = document.querySelector(".preloader");
+
+setTimeout(() => { 
+  preloader.classList.add("-top-105");
+}, 3000);
