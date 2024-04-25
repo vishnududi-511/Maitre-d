@@ -73,18 +73,14 @@ let subscriptionType = document.querySelector(".sup_month");
 let subscriptionamount = document.querySelector(".dollar_money");
 // Add click event listener to the toggle box
 
-// Add click event listener to the toggle box
 toggleBall.addEventListener("click", function () {
-  // Check the current subscription type
   if (subscriptionType.innerHTML === "/Month") {
-    // If it's month, change it to yearly
     subscriptionType.innerHTML = "/Yearly";
-    // Change the amount of the plan
+
     subscriptionamount.innerHTML = "$999";
   } else {
-    // If it's yearly, change it back to month
     subscriptionType.innerHTML = "/Month";
-    // Revert the amount of the plan
+
     subscriptionamount.innerHTML = "$449";
   }
 });
@@ -96,9 +92,13 @@ contact_btn.addEventListener("click", function () {
   callbtn.classList.toggle("btn_show");
 });
 
-
 let preloader = document.querySelector(".preloader");
 
-setTimeout(() => { 
+setTimeout(() => {
   preloader.classList.add("-top-105");
 }, 3000);
+
+AOS.init({
+  duration: 1200,
+  once: true,
+});
