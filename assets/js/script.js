@@ -88,3 +88,10 @@ toggleBall.addEventListener("click", function () {
     subscriptionamount.innerHTML = "$449";
   }
 });
+
+let contact_btn = document.querySelector(".contact_footer");
+let callbtn = document.querySelector(".footer_new_btn");
+
+contact_btn.addEventListener('click', function () {
+  callbtn.classList.toggle("btn_show")
+})
