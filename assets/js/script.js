@@ -102,3 +102,19 @@ AOS.init({
   duration: 1200,
   once: true,
 });
+
+let menu = document.querySelector(".menuicon");
+let body = document.querySelector("#body");
+let plate4 = document.querySelector(".plate4");
+
+menu.addEventListener("click", function () {
+  body.classList.toggle("overflow_hidden");
+  menu.classList.toggle("position_fixed_menu");
+});
+
+navitems.addEventListener("click", function () {
+  navitems.classList.remove("show");
+  body.classList.remove("overflow_hidden");
+  menu.classList.remove("position_fixed_menu");
+  plate4.classList.remove("active")
+});

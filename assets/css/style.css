@@ -339,6 +339,7 @@
     font-weight: 700;
     line-height: 36.96px;
     text-align: center;
+    color: var(--color-black);
 }
 
 .sec3_box_font {
@@ -376,10 +377,12 @@
     opacity: 100%;
 }
 
-.col_hover:hover .hover_box_sec_3 .sec3_box_font,
-.sec3_box_heading {
+.col_hover:hover .hover_box_sec_3 .sec3_box_font {
     color: var(--color-white);
+}
 
+.col_hover:hover .hover_box_sec_3 .sec3_box_heading {
+    color: var(--color-white);
 }
 
 .col_hover:hover .hover_box_sec_3 {
@@ -619,6 +622,7 @@
     border: none;
     padding-bottom: 15px;
     margin-top: 30px;
+    resize: none;
 }
 
 .border_bottom {
@@ -710,6 +714,15 @@
 
 .-top-105 {
     top: -105%;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.position_fixed_menu {
+    position: fixed;
+    right: 3%;
 }
 
 @media (max-width:992px) {
