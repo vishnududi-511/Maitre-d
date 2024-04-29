@@ -725,6 +725,18 @@
     right: 3%;
 }
 
+.mt_40 {
+    margin-top: 40px;
+}
+
+.mb_50 {
+    margin-bottom: 50px;
+}
+
+.pt_40 {
+    padding-top: 40px;
+}
+
 @media (max-width:992px) {
     .navitems {
         width: 100%;
@@ -751,14 +763,18 @@
 }
 
 @media (min-width:992px) {
-    .lg_pt_110 {
-        padding-top: 110px !important;
+    .lg_pt_140 {
+        padding-top: 140px !important;
     }
 }
 
 @media (min-width:768px) {
     .sec2_para {
         max-width: 453px;
+    }
+
+    .mt_md_120 {
+        margin-top: 120px;
     }
 
     .prev {
@@ -788,6 +804,14 @@
         position: relative;
         transform: translateY(-43px);
     }
+
+    .mb_md_140 {
+        margin-bottom: 140px;
+    }
+
+    .mt_md_100 {
+        margin-top: 100px;
+    }
 }
 
 @media (min-width:576px) {
@@ -807,6 +831,10 @@
 
     .sm_pt_70 {
         padding-top: 70px;
+    }
+
+    .sm_pt_100 {
+        padding-top: 100px;
     }
 
     .sec_heading {
